@@ -17,6 +17,10 @@ return [0, 1].
 
 ## Solution:
 
+### Tag:
+
+#### *[Search](https://github.com/yang-233/Algorithm-note/tree/master/Search)* 
+
 ### How to do:
 
 > We want to find a pair of  *i*  and  *j* satisfy this condition: *nums[i]+nums[j]=target*.
@@ -66,3 +70,10 @@ public:
 };
 ```
 
+### Time complexity:
+
+#### *O(n\*log(n))*
+
+### Memory complexity:
+
+#### *O(n)*
