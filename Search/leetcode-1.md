@@ -19,7 +19,14 @@ return [0, 1].
 
 ### How to do:
 
-> First, record every values' index and sort the array. Then, for each i, use binary search find the target - nums[i] between i + 1 and n. 
+> We want to find a pair of  *i*  and  *j* satfity this condition:
+> $$
+> nums[i] + nums[j] = target
+> $$
+>
+> First, record every values' index and sort the array. Then, for each *i*, use binary search find the 
+>
+> *target - nums[i]* from *nums[i+1]* to *nums[n-1]*.
 
 ### Code:
 
