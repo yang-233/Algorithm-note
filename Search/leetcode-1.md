@@ -19,10 +19,7 @@ return [0, 1].
 
 ### How to do:
 
-> We want to find a pair of  *i*  and  *j* satfity this condition:
-> $$
-> nums[i] + nums[j] = target
-> $$
+> We want to find a pair of  *i*  and  *j* satisfy this condition: *nums[i]+nums[j]=target*.
 >
 > First, record every values' index and sort the array. Then, for each *i*, use binary search find the 
 >
