@@ -75,7 +75,7 @@ public:
 
 #### *O(n)*
 
-### Memory complexity:
+### Space complexity:
 
 #### *O(n)*
 

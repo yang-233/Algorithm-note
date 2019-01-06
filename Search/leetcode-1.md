@@ -23,46 +23,34 @@ return [0, 1].
 
 ### How to do:
 
-> We want to find a pair of  *i*  and  *j* satisfy this condition: *nums[i]+nums[j]=target*.
->
-> First, record every values' index and sort the array. Then, for each *i*, use binary search find the 
->
-> *target - nums[i]* from *nums[i+1]* to *nums[n-1]*.
+> Use hash table to record every value's index. For each *nums[i]* in *nums*. find the *target - nums[i]* in the hash table. We need to solve a special case that the nums contains repeated value and *nums[i] \* 2 == target*. 
 
 ### Code:
 
 ```c++
 class Solution {
 public:
-
-    int binary_search(vector<pair<int,int>> &temp, int l, int r, int value) {
-        while (l <= r) {
-            int mid = (l + r) / 2;
-            if (temp[mid].first == value)
-                return mid;
-            else {
-                if (temp[mid].first < value)
-                    l = mid + 1;
-                else
-                    r = mid - 1;
-            }
-        }
-        return -1;
-    }
-    
     vector<int> twoSum(vector<int> &nums, int target) {
         vector<int> ans;
-        vector<pair<int,int>> temp;
-        int n = nums.size();
-        for (int i = 0; i < n; ++i)//record the index
-            temp.push_back(make_pair(nums[i], i));
-        sort(temp.begin(), temp.end());
-        for (int i = 0; i < n; ++i) {
-            int idx = binary_search(temp, i + 1, n - 1, target - temp[i].first);
-            if (idx != -1) {//find answer
-                ans.push_back(temp[i].second);
-                ans.push_back(temp[idx].second);
-                return ans;
+        unordered_map<int, vector<int>> m;//value -> indices
+        for (auto i: nums)
+            m[i] = vector<int>();
+        for (int i = 0; i < nums.size(); ++i)
+            m[nums[i]].push_back(i);
+        for (auto i : nums) {
+            if (m.find(target - i) != m.end()) {
+                if(i == target - i){
+                    if(m[i].size() > 1){
+                        ans.push_back(m[i][0]);
+                        ans.push_back(m[i][1]);
+                        break;
+                    }
+                }
+                else{
+                    ans.push_back(m[i][0]);
+                    ans.push_back(m[target - i][0]);
+                    break;
+                }
             }
         }
         return ans;
@@ -72,8 +60,8 @@ public:
 
 ### Time complexity:
 
-#### *O(n\*log(n))*
+#### *O(n)*
 
-### Memory complexity:
+### Space complexity:
 
 #### *O(n)*
