@@ -18,7 +18,7 @@ Explanation: 342 + 465 = 807.
 
 ### Tag:
 
-#### *[ Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)* 
+#### *[Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)* 
 
 ### How to do:
 

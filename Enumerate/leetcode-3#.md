@@ -25,7 +25,7 @@ Explanation: The answer is "wke", with the length of 3.
 
 ### Tag:
 
-#### *[ Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/Search)* 
+#### *[Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)* 
 
 ### How to do:
 
