@@ -24,7 +24,7 @@ The median is (2 + 3)/2 = 2.5
 
 ## Solution:
 
-### Tag:
+### Tags:
 
 #### *[Search](https://github.com/yang-233/Algorithm-note/tree/master/Search)* 
 

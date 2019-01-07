@@ -17,13 +17,13 @@ Output: "bb"
 
 ## Solution:
 
-### Tag:
+### Tags:
 
-#### *[Search](https://github.com/yang-233/Algorithm-note/tree/master/Search)*   *[Dynamic planning](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)*    
+#### *[Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)*    *[Dynamic planning](https://github.com/yang-233/Algorithm-note/tree/master/Dynamic%20planning)* 
 
 ### How to do:
 
-> Inspired by [this article](https://blog.csdn.net/camellhf/article/details/70663406), [this article](https://subetter.com/articles/manacher-algorithm.html)
+> Inspired by [this article](https://blog.csdn.net/camellhf/article/details/70663406), [this article](https://subetter.com/articles/manacher-algorithm.html).
 
 ### Code:
 

@@ -23,7 +23,7 @@ Explanation: The answer is "wke", with the length of 3.
 
 ## Solution:
 
-### Tag:
+### Tags:
 
 #### *[Enumerate](https://github.com/yang-233/Algorithm-note/tree/master/%20Enumerate)* 
 
