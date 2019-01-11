@@ -50,7 +50,7 @@ Explanation: L = 50, V = 5, III = 3.
 
 ### How to do:
 
-> Too simple. Due to the existence of 1. Must be able to find at least one combination. Just greedy to find a combination from big to small.
+> Too simple. Due to the existence of 1. Must be able to find at least one combination. Just greedy to find a combination from big to small.We can use binary search to optimize the search.
 
 ### Code:
 
