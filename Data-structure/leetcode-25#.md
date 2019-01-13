@@ -1,18 +1,24 @@
-# LeetCode 24. Swap Nodes in Pairs [link](https://leetcode.com/problems/swap-nodes-in-pairs/)
+# LeetCode 25. Reverse Nodes in k-Group [link](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
 ## Problem description:
 
-> Given a linked list, swap every two adjacent nodes and return its head.
+> Given a linked list, reverse the nodes of a linked list *k* at a time and return its modified list.
+>
+> *k* is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of *k* then left-out nodes in the end should remain as it is.
 >
 > **Note:**
 >
-> - Your algorithm should use only constant extra space.
-> - You may **not** modify the values in the list's nodes, only nodes itself may be changed.
+> - Only constant extra memory is allowed.
+> - You may not alter the values in the list's nodes, only nodes itself may be changed.
 
 ## Example:
 
 ```
-Given 1->2->3->4, you should return the list as 2->1->4->3.
+Given this linked list: 1->2->3->4->5
+
+For k = 2, you should return: 2->1->4->3->5
+
+For k = 3, you should return: 3->2->1->4->5
 ```
 
 ## Solution:
@@ -23,7 +29,7 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 ### How to do:
 
-> Note handling null pointers.
+> Inspired by *[this blog](https://blog.csdn.net/weiyongle1996/article/details/78473055)*.
 
 ### Code:
 
@@ -52,13 +58,10 @@ public:
                 root->next->next = temp;
             }
             root = head;
-            head = head->next;
+            head = root->next;
             count -= k;
         }
         return ans->next;
-    }
-    ListNode *swapPairs(ListNode *head) {
-        return reverseKGroup(head, 2);
     }
 };
 ```
