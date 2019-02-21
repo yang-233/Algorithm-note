@@ -25,6 +25,8 @@
 ### How to do:
 
 > Use hash map to record the number of the prefix sums of the array. If the *sum* is same as the nums, *sum[r] - sum[l]* is the sum in range of (i,j]. if the *sum's length = nums's length + 1(sum[0] = 0)*, *sum[r] - sum[l]* is the sum in range of [i,j). And, initial {0, 1} is for solve the case that sum = k (ex: if array is [0, 0] , k = 0, the answer is 3 ).
+>
+> Inspired by [this blog](http://www.cnblogs.com/grandyang/p/6810361.html).
 
 ### Code:
 
